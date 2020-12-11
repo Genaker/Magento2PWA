@@ -1,0 +1,12 @@
+<script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  }
+</script>
+
+<?php
+echo "<h1> Check PWA with PWA Builder </h1>";
+
+$siteURL = $_SERVER['SERVER_NAME'];
+
+echo "<iframe src=' https://www.pwabuilder.com/?url=$siteURL' title='react' style='height: 1000px; width: 100%;' frameborder='0'  scrolling='no' onload='resizeIframe(this)'>";

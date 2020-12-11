@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add id="Genaker_PWA::pwa" 
+			 title="PWA"
+			 parent="Magento_Backend::system"
+             module="Genaker_PWA"
+             sortOrder="120"
+             resource="Genaker_PWA::index_check"
+             />
+		<add action="pwa/index/check" id="Genaker_PWA::index_check" module="Genaker_PWA" parent="Genaker_PWA::pwa"
+		 resource="Genaker_PWA::index_check" sortOrder="9999" title="Check PWA"/>
+	</menu>
+</config>

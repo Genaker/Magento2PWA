@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<pwa>
+			<pwa_settings>
+				<name>Magento PWA</name>
+				<short_name>PWA</short_name>
+				<scope>/</scope>
+				<display>fullscreen</display>
+				<start_url>/</start_url>
+				<background_color>transparent</background_color>
+				<description>Magento PWA extension</description>
+				<icons>
+				[{        &quot;src&quot;: &quot;/media/pwa/images/icon-32x32.png&quot;,   &quot;sizes&quot;: &quot;32x32&quot;,  &quot;type&quot;: &quot;image/png&quot;      }, {        &quot;src&quot;: &quot;/media/pwa/images/icon-192x192.png&quot;,   &quot;sizes&quot;: &quot;192x192&quot;,  &quot;type&quot;: &quot;image/png&quot;      },  {        &quot;src&quot;: &quot;/media/pwa/images/icon-512x512.png&quot;,   &quot;sizes&quot;: &quot;192x192&quot;,  &quot;type&quot;: &quot;image/png&quot;      } ]
+				</icons>
+				<manifest_json/>
+				<theme_color/>
+			</pwa_settings>
+		</pwa>
+	</default>
+</config>

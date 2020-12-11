@@ -1,0 +1,22 @@
+{
+    "name": "genaker/module-pwa",
+    "description": "PWA Magento module",
+    "type": "magento2-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yegor Shytikov",
+            "email": "egorshitikov@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Genaker\\PWA\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

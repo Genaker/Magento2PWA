@@ -1,0 +1,56 @@
+
+<script type="module">
+
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/serviceworker.js', {scope: '/'}).then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
+/*
+Notification.requestPermission(function(status) {
+    console.log('Notification permission status:', status);
+});
+
+function displayNotification() {
+  if (typeof Notification !== 'undefined' && Notification.permission == 'granted') {
+    navigator.serviceWorker.getRegistration().then(function(reg) {
+    console.log(req);
+     var options = {
+        body: 'Here is a notification body!',
+        icon: 'images/example.png',
+        vibrate: [100, 50, 100],
+        data: {
+          dateOfArrival: Date.now(),
+          primaryKey: 1
+        }
+      };
+      reg.showNotification('Hello world!', options);
+    });
+  }
+}
+*/
+
+/*
+this.addEventListener('push', function(event) {
+  console.log('[Service Worker] Push Received.');
+  console.log(`[Service Worker] Push had this data: "${event.data.text()}"`);
+  let text = event.data.text();
+ const options = {
+    body: text,
+    icon: 'images/icon.png',
+    badge: 'images/badge.png'
+  };
+
+    event.waitUntil(self.registration.showNotification(title, options));
+
+}*/
+
+
+</script>

@@ -1,0 +1,21 @@
+
+
+<div class="pwa-container">
+    <h2 class="pwa-title"><?= $block->escapeHtml(__('Deploy PWA'))?></h2>
+    <div class="pwa-wrapper">
+    
+        <button class="pwa-button" type="button"  onclick="window.location.href='<?= $block->getGenerateUrl() ?>'">
+            <?= $block->escapeHtml(__('Deploy')) ?>
+        </button>
+       
+        <div class="text">
+        <br>
+        Push this button when everething done.
+        </div>
+
+    </div>
+    <div class="pwa-check">
+        <? if (!isset($_SERVER["HTTPS"])) echo  '<H1> PWA will not work. Your site is not using HTTPS</H1>';?>
+    </div>
+
+</div>

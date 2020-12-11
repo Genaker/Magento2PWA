@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+
+	    <tab id="pwa" translate="label" sortOrder="10">
+            <label>PWA</label>
+        </tab>
+		<section id="pwa" showInDefault="1" showInStore="0" showInWebsite="1" sortOrder="10" translate="label">
+			<label>PWA</label>
+			<tab>pwa</tab>
+			<resource>Genaker_PWA::config_genaker_pwa</resource>
+			 <group id="amasty_search" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Search</label>
+                <frontend_model>Genaker\PWA\Block\Adminhtml\Button</frontend_model>
+            </group>
+
+
+			<group id="pwa_settings" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>PWA Settings</label>
+				<field id="name" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Name</label>
+					<comment>The name and short_name manifest properties are short, plain text strings that identify the extension. </comment>
+				</field>
+				<field id="short_name" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Short Name</label>
+					<comment>The short_name (maximum of 12 characters recommended) is a short version of the extension's name. It is an optional field and if not specified, the name will be used, though it will likely be truncated.</comment>
+				</field>
+				<field id="scope" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Scope</label>
+					<comment>The scope member is a string that defines the navigation scope of this web application's application context. It restricts what web pages can be viewed while the manifest is applied. If the user navigates outside the scope, it reverts to a normal web page inside a browser tab or window.</comment>
+				</field>
+				<field id="display" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+					<label>Display Mode</label>
+					<comment>he display member is a string that determines the developers’ preferred display mode for the website. The display mode changes how much of browser UI is shown to the user and can range from browser (when the full browser window is shown) to fullscreen (when the app is full-screened).</comment>
+					<source_model>Genaker\PWA\Model\Config\Source\Display</source_model>
+				</field>
+				<field id="start_url" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Start URL</label>
+					<comment>Your homescreen shortcut will load this URL</comment>
+				</field>
+				<field id="background_color" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Background Color</label>
+					<comment>The background_color member defines a placeholder background color for the application page to display before its stylesheet is loaded. This value is used by the user agent to draw the background color of a shortcut when the manifest is available before the stylesheet has loaded.</comment>
+				</field>
+				<field id="description" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Description</label>
+					<comment>The description member is a string in which developers can explain what the application does. description is directionality-capable, which means it can be displayed left to right or right to left based on the values of the dir and lang manifest members.</comment>
+				</field>
+				<field id="icons" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="textarea">
+					<label>Icons JSON</label>
+					<comment>The icons member specifies an array of objects representing image files that can serve as application icons for different contexts.</comment>
+				</field>
+				<field id="manifest_json" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="textarea">
+					<label>complete manifest json</label>
+					<comment>Previous settings ignored. You can use generation tools - https://tomitm.github.io/appmanifest/</comment>
+				</field>
+				<field id="theme_color" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Theme Color </label>
+					<comment>The theme_color member is a string that defines the default theme color for the application. This sometimes affects how the OS displays the site (e.g., on Android's task switcher, the theme color surrounds the site).</comment>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
