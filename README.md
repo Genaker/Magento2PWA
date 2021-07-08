@@ -3,6 +3,23 @@
 
 PWA extension for Magento 2. Just install and PWA is ready. 
 
+# (PWA)Progressive Web Applications Are Not Single Page Applications
+
+For some reason many think MAgento PWA are single page applications that require MAgento PWA Studio or other JavaScript based headless theme or Single Page APP (SPA).
+
+This is wrong.
+
+Magento PWA does not have to be a PWA Studio or custom JS based Theme or SPA.
+
+I recommend against being a Magento PWA Studio:
+
+Because Magento PWA Studio client-side JavaScript does not provide the better user experience developers think they do. In fact, they create a relatively poor user experience in most cases. Also good React developers cost more than legacy PHP MAgento developers.
+
+MAgento marketers sels progressive web application is a custom development with the price tag $50K+. However you need just install this extension or add Manifest JS and Service worker to your existing MAgento store.
+
+Magento PWA Studio is just another failed project from Magento.
+
+
 ## Installation 
 ### Type 1: Zip file
 
