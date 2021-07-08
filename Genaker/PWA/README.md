@@ -1,6 +1,8 @@
 
 # PWA module for any magento store. No needs rewrite evererthing using PWA Studio
 
+PWA extension for Magento 2. Just install and PWA is ready. 
+
 ## Installation 
 ### Type 1: Zip file
 
