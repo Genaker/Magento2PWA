@@ -3,7 +3,7 @@
 
 PWA extension for Magento 2. Just install and PWA is ready. 
 
-# Magento (PWA)Progressive Web Applications Are Not a Magento PWA Stusio
+# Magento (PWA)Progressive Web Applications Are Not a Magento PWA Studio
 
 For some reason many think MAgento PWA are single page applications that require MAgento PWA Studio or other JavaScript based headless theme or Single Page APP (SPA).
 
