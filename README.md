@@ -27,7 +27,7 @@ Magento PWA Studio is just another failed project from Magento.
  - Enable the module by running `php bin/magento module:enable Genaker_PWA`
  - Apply database updates by running `php bin/magento setup:upgrade`\*
  - Flush the cache by running `php bin/magento cache:flush`
- - Flush the cache by running `php bin/magento pwa:generate`
+ - Generate JS ServiceWorker and Manifest files **`php bin/magento pwa:generate`**
 
 ### Type 2: Composer
 
@@ -35,6 +35,7 @@ Magento PWA Studio is just another failed project from Magento.
  - enable the module by running `php bin/magento module:enable Genaker_PWA`
  - apply database updates by running `php bin/magento setup:upgrade`\*
  - Flush the cache by running `php bin/magento cache:flush`
+ - Generate JS ServiceWorker and Manifest files **`php bin/magento pwa:generate`**
 
 
 ## Configuration
