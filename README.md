@@ -3,7 +3,7 @@
 
 PWA extension for Magento 2. Just install and PWA is ready. 
 
-After installation of this plugin you will have ALL PWA feature avalablr for your Magento 2 web site.
+After installation of this plugin you will have ALL PWA feature available for your Magento 2 web site.
 
 
 # Magento (PWA)Progressive Web Applications Are Not a Magento PWA Studio
