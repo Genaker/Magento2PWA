@@ -3,6 +3,9 @@
 
 PWA extension for Magento 2. Just install and PWA is ready. 
 
+After installation of this plugin you will have ALL PWA feature avalablr for your Magento 2 web site.
+
+
 # Magento (PWA)Progressive Web Applications Are Not a Magento PWA Studio
 
 For some reason many think MAgento PWA are single page applications that require MAgento PWA Studio or other JavaScript based headless theme or Single Page APP (SPA).
@@ -21,6 +24,19 @@ Magento PWA Studio is just another failed project from Magento.
 
 
 ## Installation 
+
+**Note!** We are expireancing the issue: A New Packagist Composer packages are not available using Composer V1. You need upgrade Composer to V2.
+
+To install this NEW Magento PWA extension you must have Composer V2 to upgrade use command: 
+
+```
+composer self-update --2
+```
+See screanshot:
+
+![composer-upgrade](https://user-images.githubusercontent.com/9213670/129279251-c6e7a1bc-94e3-4486-8625-e6929b77d626.jpg)
+
+
 ### Type 1: Zip file
 
  - Unzip the zip file in `app/code/Genaker`
