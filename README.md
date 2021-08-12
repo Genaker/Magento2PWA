@@ -25,7 +25,7 @@ Magento PWA Studio is just another failed project from Magento.
 
 ## Installation 
 
-**Note!** We are expireancing the issue: A New Packagist Composer packages are not available using Composer V1. You need upgrade Composer to V2.
+**Note!** We are expireancing the issue: A New Packagist Composer packages are not available using Composer V1. You need upgrade Composer to V2. New packages will only be visible to Composer 2. 
 
 To install this NEW Magento PWA extension you must have Composer V2 to upgrade use command: 
 
