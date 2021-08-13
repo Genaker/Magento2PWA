@@ -36,6 +36,8 @@ See screanshot:
 
 ![composer-upgrade](https://user-images.githubusercontent.com/9213670/129279251-c6e7a1bc-94e3-4486-8625-e6929b77d626.jpg)
 
+PS: this issue was fixed by warmupping the composer API V1. Composer V1 shuld also works. 
+
 
 ### Type 1: Zip file
 
