@@ -13,7 +13,8 @@ if ('serviceWorker' in navigator) {
     });
   });
 }
-/*
+  
+/* Uncomment to enable Push Notifications 
 Notification.requestPermission(function(status) {
     console.log('Notification permission status:', status);
 });
@@ -51,6 +52,5 @@ this.addEventListener('push', function(event) {
     event.waitUntil(self.registration.showNotification(title, options));
 
 }*/
-
 
 </script>
