@@ -5,6 +5,7 @@ PWA extension for Magento 2. Just install and PWA is ready.
 
 After installation of this plugin you will have ALL PWA feature available for your Magento 2 web site.
 
+Progressive web app (PWA), is the latest browser feature that allows anyone to use web sites as native mobile or desktop apps. It is not a Magento feature. You don't need expensive redesign to use PWA.
 
 # Magento (PWA)Progressive Web Applications Are Not a Magento PWA Studio
 
