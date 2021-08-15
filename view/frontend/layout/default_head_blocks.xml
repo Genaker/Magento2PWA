@@ -3,7 +3,7 @@
 	<body>
         <referenceBlock name="head.additional">
             <block name="pwa_meta" as="pwa_meta" template="Genaker_PWA::head/pwa_meta.phtml"/>
-            <block name="serviceworker_register_sript" as="serviceworker_register_sript" template="Genaker_PWA::head/serviceworker_register_sript.phtml" after="pwa_meta"/>
+            <block name="serviceworker_register_sript" as="serviceworker_register_script" template="Genaker_PWA::head/serviceworker_register_script.phtml" after="pwa_meta"/>
         </referenceBlock>
     </body>
 </page>
