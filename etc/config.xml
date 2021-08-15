@@ -13,7 +13,9 @@
 				<icons>
 				[{        &quot;src&quot;: &quot;/media/pwa/images/icon-32x32.png&quot;,   &quot;sizes&quot;: &quot;32x32&quot;,  &quot;type&quot;: &quot;image/png&quot;      }, {        &quot;src&quot;: &quot;/media/pwa/images/icon-192x192.png&quot;,   &quot;sizes&quot;: &quot;192x192&quot;,  &quot;type&quot;: &quot;image/png&quot;      },  {        &quot;src&quot;: &quot;/media/pwa/images/icon-512x512.png&quot;,   &quot;sizes&quot;: &quot;192x192&quot;,  &quot;type&quot;: &quot;image/png&quot;      } ]
 				</icons>
-				<manifest_json/>
+				<manifest_json>
+				{&quot;name&quot;:&quot;Magento PWA 2&quot;,&quot;short_name&quot;:&quot;PWA&quot;,&quot;scope&quot;:&quot;\/&quot;,&quot;display&quot;:&quot;fullscreen&quot;,&quot;start_url&quot;:&quot;\/&quot;,&quot;background_color&quot;:&quot;transparent&quot;,&quot;description&quot;:&quot;Magento PWA extension&quot;,&quot;icons&quot;:[{&quot;src&quot;:&quot;\/media\/pwa\/images\/icon-32x32.png&quot;,&quot;sizes&quot;:&quot;32x32&quot;,&quot;type&quot;:&quot;image\/png&quot;},{&quot;src&quot;:&quot;\/media\/pwa\/images\/icon-192x192.png&quot;,&quot;sizes&quot;:&quot;192x192&quot;,&quot;type&quot;:&quot;image\/png&quot;},{&quot;src&quot;:&quot;\/media\/pwa\/images\/icon-512x512.png&quot;,&quot;sizes&quot;:&quot;192x192&quot;,&quot;type&quot;:&quot;image\/png&quot;}],&quot;theme_color&quot;:&quot;white&quot;}
+				</manifest_json>
 				<theme_color/>
 			</pwa_settings>
 		</pwa>
