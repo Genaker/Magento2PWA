@@ -2,14 +2,14 @@
  
 namespace Genaker\Magento2PWA\Setup;
  
-use Magento\Framework\Setup\UpgradeDataInterface;
+use Magento\Framework\Setup\InstallDataInterface;
 use Magento\Framework\Setup\ModuleContextInterface;
 use Magento\Framework\Setup\ModuleDataSetupInterface;
  
 /**
  * @codeCoverageIgnore
  */
-class InstallData implements UpgradeDataInterface
+class InstallData implements InstallDataInterface
 {
     /**
      * @var \Magento\Cms\Model\PageFactory
@@ -35,13 +35,13 @@ class InstallData implements UpgradeDataInterface
     {
         $setup->startSetup();
  
-        if (version_compare($context->getVersion(), '1.0.7') < 0) {
+        if (version_compare($context->getVersion(), '1.0.8') < 0) {
             $page = $this->_pageFactory->create();
             $page->setTitle('OfflinePage')
                 ->setIdentifier('offline')
                 ->setIsActive(true)
                 ->setPageLayout('empty')
-                ->setStores(array(0))
+                ->setStores(array(0,1))
                 ->setContent('<h1>Magento PWA Offline Page</h1>')
                 ->save();
         }
