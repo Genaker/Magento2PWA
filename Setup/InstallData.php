@@ -9,7 +9,7 @@ use Magento\Framework\Setup\ModuleDataSetupInterface;
 /**
  * @codeCoverageIgnore
  */
-class CreateOfflinePage implements UpgradeDataInterface
+class InstallData implements UpgradeDataInterface
 {
     /**
      * @var \Magento\Cms\Model\PageFactory
@@ -35,7 +35,7 @@ class CreateOfflinePage implements UpgradeDataInterface
     {
         $setup->startSetup();
  
-        if (version_compare($context->getVersion(), '1.0.5') < 0) {
+        if (version_compare($context->getVersion(), '1.0.6') < 0) {
             $page = $this->_pageFactory->create();
             $page->setTitle('OfflinePage')
                 ->setIdentifier('offline')
