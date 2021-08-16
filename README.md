@@ -79,4 +79,9 @@ PS: this issue was fixed by warmupping the composer API V1. Composer V1 shuld al
 
  - Theme Color  (pwa/pwa_settings/theme_color)
 
+## Note:
+
+This module desn't support Multi Store Magento functionality. 
+Magento Multi store violates SOLID and KISS software development principles and shuldn't be used. However if you need this feature fill free email me (yegorshytikov@gmail.com). I can add this functionality. 
+
 
