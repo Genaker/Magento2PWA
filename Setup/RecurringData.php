@@ -1,15 +1,4 @@
-<?php
- 
-namespace Genaker\Magento2PWA\Setup;
- 
-use Magento\Framework\Setup\UpgradeDataInterface;
-use Magento\Framework\Setup\ModuleContextInterface;
-use Magento\Framework\Setup\ModuleDataSetupInterface;
- 
-/**
- * @codeCoverageIgnore
- */
-class UpgradeData implements UpgradeDataInterface
+class RecurringData implements \Magento\Framework\Setup\InstallDataInterface
 {
     /**
      * @var \Magento\Cms\Model\PageFactory
@@ -31,12 +20,14 @@ class UpgradeData implements UpgradeDataInterface
      * @param ModuleDataSetupInterface $setup
      * @param ModuleContextInterface $context
      */
-    public function upgrade(ModuleDataSetupInterface $setup, ModuleContextInterface $context)
+    public function install(ModuleDataSetupInterface $setup, ModuleContextInterface $context)
     {
         $setup->startSetup();
- 
-        if (version_compare($context->getVersion(), '1.0.9') < 0) {
-            $page = $this->_pageFactory->create();
+ 	$page = $this->_pageFactory->create();
+
+        if (true || !$page->load('offline')) {
+
+try {
             $page->setTitle('OfflinePage')
                 ->setIdentifier('offline')
                 ->setIsActive(true)
@@ -44,8 +35,11 @@ class UpgradeData implements UpgradeDataInterface
                 ->setStores(array(0,1))
                 ->setContent('<h1>Magento PWA Offline Page</h1>')
                 ->save();
+} catch (\Exception $e){
+// it is okay
+}
         }
- 
+
         $setup->endSetup();
     }
 }
