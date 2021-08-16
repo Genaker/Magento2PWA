@@ -101,7 +101,7 @@ self.addEventListener('fetch', (event) => {
                 //console.log('[Service Worker] Fetching resource: ' + event.request.url);
 
                 if (fromCache) {
-                    console.log('[Service Worker] From The cache: ' + event.request.url);
+                   // console.log('[Service Worker] From The cache: ' + event.request.url);
                     return fromCache;
                 }
 
