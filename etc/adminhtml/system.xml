@@ -51,7 +51,7 @@
 					<comment>The icons member specifies an array of objects representing image files that can serve as application icons for different contexts.</comment>
 				</field>
 				<field id="manifest_json" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="textarea">
-					<label>complete manifest json</label>
+					<label>Complete Manifest Json</label>
 					<comment>Previous settings ignored. You can use generation tools - https://tomitm.github.io/appmanifest/</comment>
 				</field>
 				<field id="theme_color" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
