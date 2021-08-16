@@ -35,7 +35,7 @@ class InstallData implements UpgradeDataInterface
     {
         $setup->startSetup();
  
-        if (version_compare($context->getVersion(), '1.0.6') < 0) {
+        if (version_compare($context->getVersion(), '1.0.7') < 0) {
             $page = $this->_pageFactory->create();
             $page->setTitle('OfflinePage')
                 ->setIdentifier('offline')
