@@ -7,6 +7,12 @@ After installation of this plugin you will have ALL PWA feature available for yo
 
 Progressive web app (PWA), is the latest browser feature that allows anyone to use web sites as native mobile or desktop apps. It is not a Magento feature. You don't need expensive redesign to use PWA.
 
+PWA is simply a website acting as a mobile app. Unlike mobile apps, they don’t have to be downloaded from an app store. 
+
+With PWAs, users can get app-like experiences they save to their home screens, with lightning speed and mobile-first design without needing to actually build an app for both iOS and Android. 
+
+PWAs allow for modern web capabilities, including background sync, offline browsing, barcode scanning, and even push notifications. 
+
 # Magento (PWA)Progressive Web Applications Are Not a Magento PWA Studio
 
 For some reason many think MAgento PWA are single page applications that require MAgento PWA Studio or other JavaScript based headless theme or Single Page APP (SPA).
