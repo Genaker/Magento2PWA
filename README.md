@@ -53,6 +53,8 @@ PS: this issue was fixed by warmupping the composer API V1. Composer V1 shuld al
  - Apply database updates by running `php bin/magento setup:upgrade`\*
  - Flush the cache by running `php bin/magento cache:flush`
  - Generate JS ServiceWorker and Manifest files **`php bin/magento pwa:generate`**
+ 
+ **Note: You can add that generated files to the git and don't generate this files on production**
 
 ### Type 2: Composer
 
@@ -61,6 +63,7 @@ PS: this issue was fixed by warmupping the composer API V1. Composer V1 shuld al
  - apply database updates by running `php bin/magento setup:upgrade`\*
  - Flush the cache by running `php bin/magento cache:flush`
  - Generate JS ServiceWorker and Manifest files **`php bin/magento pwa:generate`**
+ **Note: You can add that generated files to the git and don't generate this files on production**
 
 
 ## Configuration
