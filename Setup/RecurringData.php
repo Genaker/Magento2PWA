@@ -1,3 +1,13 @@
+<?php
+
+namespace Genaker\PWA\Setup;
+
+use Magento\Framework\Setup\InstallSchemaInterface;
+use Magento\Framework\Setup\ModuleContextInterface;
+use Magento\Framework\Setup\SchemaSetupInterface;
+use Magento\Framework\Stdlib\DateTime\DateTime;
+
+
 class RecurringData implements \Magento\Framework\Setup\InstallDataInterface
 {
     /**
@@ -20,10 +30,10 @@ class RecurringData implements \Magento\Framework\Setup\InstallDataInterface
      * @param ModuleDataSetupInterface $setup
      * @param ModuleContextInterface $context
      */
-    public function install(ModuleDataSetupInterface $setup, ModuleContextInterface $context)
+    public function install(\Magento\Framework\Setup\ModuleDataSetupInterface $setup, \Magento\Framework\Setup\ModuleContextInterface $context)
     {
         $setup->startSetup();
- 	$page = $this->_pageFactory->create();
+        $page = $this->_pageFactory->create();
 
         if (true || !$page->load('offline')) {
 
