@@ -65,10 +65,12 @@ class Settings extends \Magento\Framework\DataObject implements \Magento\Framewo
            
         }
         // ToDo: This feature is not tested
-        if ($normal['manifest_json'] !== null && strlen($normal['manifest_json']) > 10) {
+        if (isset($normal['manifest_json']) && $normal['manifest_json'] !== null && strlen($normal['manifest_json']) > 10) {
             $normal =  json_decode($normal['manifest_json']);
         } else {
+            if (isset($normal['manifest_json']))
             unset($normal['manifest_json']);
+            if (isset($normal['icons']))
             $normal['icons'] = json_decode($normal['icons']);
         }     
 
